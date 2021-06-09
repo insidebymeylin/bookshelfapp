@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Bookshelf App</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="row align-items-stretch no-gutters contact-wrap">
+                <div class="col-md-7">
+                    <div class="form h-100">
+                        <h3><i class="fa fa-book mr-2"></i>Data Buku</h3>
+                        <form class="mb-5" method="post" id="form" name="form">
+                            <div class="row">
+                                <div class="col-md-12 form-group mb-5">
+                                    <label for="" class="col-form-label">Judul</label>
+                                    <input type="text" class="form-control" name="title" id="title" placeholder="Cth : Laskar Pelangi" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-8 form-group mb-5">
+                                    <label for="" class="col-form-label">Penulis</label>
+                                    <input type="text" class="form-control" name="author" id="author" placeholder="Cth : Andrea Hirata" />
+                                </div>
+                                <div class="col-md-4 form-group mb-5">
+                                    <label for="" class="col-form-label">Tahun Terbit</label>
+                                    <input type="number" class="form-control" name="year" id="year" placeholder="Cth : 2021" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <input type="submit" value="Tambah ke Rak" name="submit" class="btn btn-primary rounded-0 py-2 px-4" />
+                                    <span class="submitting"></span>
+                                </div>
+                            </div>
+                        </form>
+
+                        <h3><i class="fa fa-book mr-2"></i>Telah Dibaca</h3>
+                        <p class="mb-4">
+                            Wah hebat, ada <span id="hitung_read">0</span> buku yang telah kamu baca. Check it out, again!
+                        </p>
+                        <div id="completed-books"></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="contact-info h-100">
+                        <h3><i class="fa fa-book mr-2"></i>Belum Dibaca</h3>
+                        <p class="mb-4">
+                            Hey kamu, ada <span id="hitung"></span> buku yang belum kamu baca loh. Yuk baca sekarang!
+                        </p>
+                        <div id="books"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/data.js" type="text/javascript"></script>
+    <script src="assets/js/dom.js" type="text/javascript"></script>
+    <script src="assets/js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
